@@ -7,5 +7,5 @@ type IOtpRepsitory interface {
 
 	Verify(phone, otp string) (bool, error)
 
-	CountRecent(phone string, window time.Duration) (int64, error)
+	CountOtpRequestsInLastDuration(phone string, duration time.Duration) (int64, error)
 }

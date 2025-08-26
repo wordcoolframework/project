@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-type OTPRequest struct {
+type Otp struct {
 	gorm.Model
 	Phone     string `gorm:"index"`
 	OTP       string
